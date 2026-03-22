@@ -41,7 +41,7 @@
       <h1>Find a Place<br>You'll Love to <em>Call Home</em></h1>
       <p class="hero-text">With over a decade of experience in Northern Virginia real estate, I turn challenging transactions into smooth, rewarding experiences.</p>
       <div class="hero-actions">
-        <a href="https://neenakalra.realscout.me/" target="_blank" rel="noopener" class="btn btn-primary">Browse Listings</a>
+        <a href="https://neenakalra.realscout.me/" target="_blank" rel="noopener" class="btn btn-primary">Browse Live MLS Listings</a>
         <a href="valuation.html" class="btn btn-outline">What's My Home Worth?</a>
       </div>
     </div>
@@ -68,114 +68,82 @@
   <!-- Search Bar -->
   <div class="search-bar">
     <div class="container">
-      <form class="search-bar-inner">
+      <div class="search-intro">
+        <span class="section-label">Recent Client Success</span>
+        <p>Explore recent transactions Neena has helped close across Northern Virginia, then jump into the live MLS search for homes that are available now.</p>
+      </div>
+      <form class="search-bar-inner" data-search-form="home">
         <div class="search-group">
-          <label>Location</label>
-          <input type="text" placeholder="City, ZIP, or Neighborhood">
+          <label for="home-location">Location</label>
+          <input id="home-location" name="location" type="text" placeholder="City, ZIP, or Neighborhood">
         </div>
         <div class="search-group">
-          <label>Property Type</label>
-          <select>
+          <label for="home-property-type">Property Type</label>
+          <select id="home-property-type" name="type">
             <option value="">All Types</option>
-            <option>Single Family</option>
-            <option>Townhouse</option>
-            <option>Condo</option>
-            <option>Luxury Estate</option>
+            <option value="Single Family">Single Family</option>
+            <option value="Townhouse">Townhouse</option>
+            <option value="Condo">Condo</option>
+            <option value="Luxury Estate">Luxury Estate</option>
           </select>
         </div>
         <div class="search-group">
-          <label>Price Range</label>
-          <select>
+          <label for="home-price-range">Price Range</label>
+          <select id="home-price-range" name="price">
             <option value="">Any Price</option>
-            <option>$300K - $500K</option>
-            <option>$500K - $750K</option>
-            <option>$750K - $1M</option>
-            <option>$1M - $2M</option>
-            <option>$2M+</option>
+            <option value="300000-500000">$300K - $500K</option>
+            <option value="500000-750000">$500K - $750K</option>
+            <option value="750000-1000000">$750K - $1M</option>
+            <option value="1000000-2000000">$1M - $2M</option>
+            <option value="2000000+">$2M+</option>
           </select>
         </div>
         <div class="search-group">
-          <label>Bedrooms</label>
-          <select>
+          <label for="home-bedrooms">Bedrooms</label>
+          <select id="home-bedrooms" name="beds">
             <option value="">Any</option>
-            <option>2+</option>
-            <option>3+</option>
-            <option>4+</option>
-            <option>5+</option>
+            <option value="2">2+</option>
+            <option value="3">3+</option>
+            <option value="4">4+</option>
+            <option value="5">5+</option>
           </select>
         </div>
-        <button type="submit" class="btn btn-primary">Search</button>
+        <button type="submit" class="btn btn-primary">Explore Recent Transactions</button>
       </form>
     </div>
   </div>
+
+  <!-- Live Search Banner -->
+  <section class="live-search-banner">
+    <div class="container">
+      <div class="live-search-banner-inner fade-up">
+        <div>
+          <span class="section-label">Live Home Search</span>
+          <h2>Browse what’s available right now.</h2>
+          <p>Use Neena’s live MLS search to explore active homes, save favorites, and request private tours while the recent transactions on this site show the kind of results she delivers.</p>
+        </div>
+        <div class="live-search-actions">
+          <a href="https://neenakalra.realscout.me/" target="_blank" rel="noopener" class="btn btn-primary">Open Live MLS Search</a>
+          <a href="contact.html" class="btn btn-outline-dark">Ask for a Custom Search</a>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <!-- Featured Listings -->
   <section class="section-pad">
     <div class="container">
       <div class="text-center fade-up">
-        <span class="section-label">Curated Properties</span>
-        <h2 class="section-title">Featured Listings</h2>
-        <p class="section-subtitle centered">Handpicked homes that represent the best of Northern Virginia living</p>
+        <span class="section-label">Recent Transactions</span>
+        <h2 class="section-title">Closed Sales</h2>
+        <p class="section-subtitle centered">Recent homes Neena K Homes helped close across Northern Virginia</p>
         <div class="divider centered"></div>
       </div>
       <br><br>
-      <div class="listings-grid">
-
-        <a href="https://neenakalra.realscout.me/" target="_blank" rel="noopener" class="listing-card fade-up">
-          <div class="listing-card-image">
-            <img src="images/listing1.jpg" alt="23957 Nightsong Ct, Aldie">
-            <span class="listing-badge">Active</span>
-            <button class="listing-favorite" aria-label="Save listing">&#9825;</button>
-          </div>
-          <div class="listing-card-body">
-            <div class="listing-price">$1,385,000</div>
-            <div class="listing-address">23957 Nightsong Ct, Aldie, VA 20105</div>
-            <div class="listing-features">
-              <span class="listing-feature">5 Beds</span>
-              <span class="listing-feature">4 Baths</span>
-              <span class="listing-feature">4,200 Sqft</span>
-            </div>
-          </div>
-        </a>
-
-        <a href="https://neenakalra.realscout.me/" target="_blank" rel="noopener" class="listing-card fade-up">
-          <div class="listing-card-image">
-            <img src="images/listing3.jpg" alt="23684 Evermont Trace Dr, Ashburn">
-            <span class="listing-badge">Active</span>
-            <button class="listing-favorite" aria-label="Save listing">&#9825;</button>
-          </div>
-          <div class="listing-card-body">
-            <div class="listing-price">$1,180,000</div>
-            <div class="listing-address">23684 Evermont Trace Dr, Ashburn, VA 20148</div>
-            <div class="listing-features">
-              <span class="listing-feature">6 Beds</span>
-              <span class="listing-feature">5 Baths</span>
-              <span class="listing-feature">5,500 Sqft</span>
-            </div>
-          </div>
-        </a>
-
-        <a href="https://neenakalra.realscout.me/" target="_blank" rel="noopener" class="listing-card fade-up">
-          <div class="listing-card-image">
-            <img src="images/listing6.jpg" alt="3909 Pender Spring Dr, Fairfax">
-            <span class="listing-badge">Active</span>
-            <button class="listing-favorite" aria-label="Save listing">&#9825;</button>
-          </div>
-          <div class="listing-card-body">
-            <div class="listing-price">$1,200,000</div>
-            <div class="listing-address">3909 Pender Spring Dr, Fairfax, VA 22033</div>
-            <div class="listing-features">
-              <span class="listing-feature">5 Beds</span>
-              <span class="listing-feature">4 Baths</span>
-              <span class="listing-feature">5,200 Sqft</span>
-            </div>
-          </div>
-        </a>
-
-      </div>
+      <div class="listings-grid" data-listings-grid="home-featured"></div>
       <br><br>
       <div class="text-center fade-up">
-        <a href="https://neenakalra.realscout.me/" target="_blank" rel="noopener" class="btn btn-outline-dark">View All Listings &rarr;</a>
+        <a href="listings.html" class="btn btn-outline-dark">View All Transactions &rarr;</a>
       </div>
     </div>
   </section>
@@ -272,7 +240,7 @@
       </div>
       <br><br>
       <div class="neighborhoods-grid">
-        <a href="neighborhoods.html#ashburn" class="neighborhood-card fade-up">
+        <a href="ashburn.html" class="neighborhood-card fade-up">
           <img src="images/ashburn.jpg" alt="Ashburn, VA">
           <div class="neighborhood-card-overlay">
             <span class="neighborhood-name">Ashburn</span>
@@ -280,7 +248,7 @@
           </div>
           <div class="neighborhood-arrow">&rarr;</div>
         </a>
-        <a href="neighborhoods.html#brambleton" class="neighborhood-card fade-up">
+        <a href="brambleton.html" class="neighborhood-card fade-up">
           <img src="images/brambleton.jpg" alt="Brambleton, VA">
           <div class="neighborhood-card-overlay">
             <span class="neighborhood-name">Brambleton</span>
@@ -288,7 +256,7 @@
           </div>
           <div class="neighborhood-arrow">&rarr;</div>
         </a>
-        <a href="neighborhoods.html#aldie" class="neighborhood-card fade-up">
+        <a href="aldie.html" class="neighborhood-card fade-up">
           <img src="images/aldie.jpg" alt="Aldie, VA">
           <div class="neighborhood-card-overlay">
             <span class="neighborhood-name">Aldie</span>
@@ -296,7 +264,7 @@
           </div>
           <div class="neighborhood-arrow">&rarr;</div>
         </a>
-        <a href="neighborhoods.html#south-riding" class="neighborhood-card fade-up">
+        <a href="south-riding.html" class="neighborhood-card fade-up">
           <img src="images/southriding.jpg" alt="South Riding, VA">
           <div class="neighborhood-card-overlay">
             <span class="neighborhood-name">South Riding</span>
@@ -304,7 +272,7 @@
           </div>
           <div class="neighborhood-arrow">&rarr;</div>
         </a>
-        <a href="neighborhoods.html#broadlands" class="neighborhood-card fade-up">
+        <a href="broadlands.html" class="neighborhood-card fade-up">
           <img src="images/broadlands.jpg" alt="Broadlands, VA">
           <div class="neighborhood-card-overlay">
             <span class="neighborhood-name">Broadlands</span>
@@ -312,7 +280,7 @@
           </div>
           <div class="neighborhood-arrow">&rarr;</div>
         </a>
-        <a href="neighborhoods.html#one-loudoun" class="neighborhood-card fade-up">
+        <a href="one-loudoun.html" class="neighborhood-card fade-up">
           <img src="images/oneloudoun.jpg" alt="One Loudoun, VA">
           <div class="neighborhood-card-overlay">
             <span class="neighborhood-name">One Loudoun</span>
@@ -450,6 +418,7 @@
     </div>
   </footer>
 
+  <script src="js/site-data.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>

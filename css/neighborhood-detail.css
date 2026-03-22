@@ -1,0 +1,231 @@
+/* Dedicated neighborhood pages */
+
+.neighborhood-page {
+  background: var(--white);
+}
+
+.neighborhood-hero {
+  min-height: 72vh;
+  display: flex;
+  align-items: end;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  padding: 10rem 0 5rem;
+  color: var(--white);
+}
+
+.neighborhood-hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(10,22,40,0.18), rgba(10,22,40,0.6));
+}
+
+.neighborhood-hero .container {
+  position: relative;
+  z-index: 1;
+}
+
+.neighborhood-hero-content {
+  max-width: 760px;
+}
+
+.neighborhood-hero h1 {
+  color: var(--white);
+  font-size: clamp(3rem, 7vw, 5.3rem);
+  line-height: 0.95;
+  margin: 0 0 1.25rem;
+}
+
+.neighborhood-hero-lead {
+  font-size: 1.1rem;
+  line-height: 1.9;
+  max-width: 680px;
+  color: rgba(255,255,255,0.82);
+  margin-bottom: 2rem;
+}
+
+.neighborhood-hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.neighborhood-breadcrumbs {
+  padding: 1.5rem 0 0;
+}
+
+.neighborhood-intro-grid,
+.neighborhood-two-col {
+  display: grid;
+  grid-template-columns: 1.5fr 0.9fr;
+  gap: 2rem;
+  align-items: start;
+}
+
+.neighborhood-copy-card,
+.neighborhood-side-card,
+.info-panel {
+  background: var(--white);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-sm);
+  padding: 2.25rem;
+}
+
+.neighborhood-copy {
+  font-size: 1.03rem;
+  line-height: 1.9;
+  color: var(--text-light);
+  margin-bottom: 1rem;
+}
+
+.neighborhood-side-card h3,
+.info-panel h2 {
+  margin-bottom: 0.75rem;
+}
+
+.fact-list {
+  display: grid;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.fact-list li {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 0.85rem;
+}
+
+.fact-list li span,
+.commute-row span,
+.snapshot-card span {
+  color: var(--text-muted);
+  font-size: 0.76rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+}
+
+.fact-list li strong,
+.commute-row strong,
+.snapshot-card strong {
+  color: var(--navy);
+  text-align: right;
+}
+
+.section-band {
+  background: linear-gradient(180deg, rgba(248,246,243,0.82), rgba(255,255,255,0.95));
+}
+
+.detail-card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.5rem;
+  margin-top: 3rem;
+}
+
+.detail-card {
+  background: var(--white);
+  border: 1px solid var(--border);
+  padding: 2rem;
+  box-shadow: var(--shadow-sm);
+}
+
+.detail-card h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.75rem;
+}
+
+.detail-card p {
+  color: var(--text-light);
+  line-height: 1.8;
+}
+
+.snapshot-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1rem;
+  margin-top: 3rem;
+}
+
+.snapshot-card {
+  background: var(--navy);
+  color: var(--white);
+  padding: 1.5rem;
+  min-height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.snapshot-card strong {
+  color: var(--gold-light);
+  font-size: 1.02rem;
+  line-height: 1.6;
+  text-align: left;
+}
+
+.commute-list,
+.school-notes {
+  display: grid;
+  gap: 0.9rem;
+  margin-top: 1.5rem;
+}
+
+.commute-row,
+.school-note {
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 0.9rem;
+}
+
+.commute-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.school-note {
+  color: var(--text-light);
+  line-height: 1.7;
+}
+
+.neighborhood-cta {
+  margin-top: 1rem;
+}
+
+@media (max-width: 1100px) {
+  .detail-card-grid,
+  .snapshot-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .neighborhood-intro-grid,
+  .neighborhood-two-col {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 720px) {
+  .neighborhood-hero {
+    min-height: 62vh;
+    padding: 8rem 0 4rem;
+  }
+
+  .neighborhood-hero-actions {
+    flex-direction: column;
+  }
+
+  .detail-card-grid,
+  .snapshot-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .neighborhood-copy-card,
+  .neighborhood-side-card,
+  .info-panel {
+    padding: 1.5rem;
+  }
+}

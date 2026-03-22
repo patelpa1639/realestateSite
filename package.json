@@ -1,0 +1,15 @@
+{
+  "name": "realestate-site",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Static real-estate marketing site with a minimal Node backend for lead capture.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "test": "node --test"
+  },
+  "devDependencies": {
+    "happy-dom": "^20.8.4"
+  }
+}

@@ -1,0 +1,335 @@
+{
+  "ashburn": {
+    "name": "Ashburn",
+    "county": "Loudoun County",
+    "heroImage": "images/ashburn.jpg",
+    "heroTag": "Tech Corridor Living",
+    "heroLead": "A polished suburban market with strong schools, commuter convenience, and a wide range of newer homes.",
+    "overview": [
+      "Ashburn is one of Loudoun County's most established and sought-after communities. Buyers are drawn to the mix of master-planned neighborhoods, convenient shopping, and easy access to the Dulles corridor.",
+      "The area works well for families who want predictable resale value, neighborhood amenities, and a lifestyle that balances comfort with everyday convenience."
+    ],
+    "highlights": [
+      { "title": "Convenient Commuting", "text": "Quick access to Route 7, the Greenway, and employment centers across Loudoun and Fairfax." },
+      { "title": "Master-Planned Comfort", "text": "Neighborhood amenities, parks, trails, and community pools are a major part of the draw." },
+      { "title": "Strong Buyer Demand", "text": "Ashburn stays on the radar for families, move-up buyers, and long-term owners." }
+    ],
+    "snapshot": [
+      { "label": "Typical Homes", "value": "Single-family homes, townhomes, and newer luxury builds" },
+      { "label": "Price Profile", "value": "Mid-$700Ks to $1M+ depending on size and location" },
+      { "label": "Lot Style", "value": "Neighborhood lots with managed community amenities" },
+      { "label": "Best Fit", "value": "Families, commuters, and buyers seeking low-friction living" }
+    ],
+    "commute": [
+      { "label": "Dulles Airport", "value": "15 to 20 min" },
+      { "label": "Reston / Tysons", "value": "25 to 35 min" },
+      { "label": "Downtown DC", "value": "45 to 60 min" }
+    ],
+    "schools": {
+      "district": "Loudoun County Public Schools",
+      "text": "Ashburn is popular with buyers who want access to Loudoun County schools and a neighborhood structure that supports busy family schedules.",
+      "notes": [
+        "Commonly selected by buyers prioritizing school access",
+        "Easy to pair with after-school activities and sports programs",
+        "A practical choice for long-term household planning"
+      ]
+    },
+    "cta": "If you're comparing Ashburn against nearby Loudoun communities, I can help you narrow the search quickly."
+  },
+  "brambleton": {
+    "name": "Brambleton",
+    "county": "Loudoun County",
+    "heroImage": "images/brambleton.jpg",
+    "heroTag": "Walkable Master Plan",
+    "heroLead": "A community built around trails, amenities, and an active neighborhood rhythm that keeps everything close by.",
+    "overview": [
+      "Brambleton feels deliberately designed. The neighborhood has a strong sense of place, with community events, sidewalks, amenities, and a town-center style layout that makes daily life feel easy.",
+      "It appeals to buyers who value walkability, newer construction, and the feeling of living inside a fully formed community instead of a collection of separate subdivisions."
+    ],
+    "highlights": [
+      { "title": "Community First", "text": "Parks, trails, pools, and neighborhood programming create a built-in social network." },
+      { "title": "Newer Construction", "text": "Many homes offer open layouts, larger kitchens, and modern finishes buyers expect today." },
+      { "title": "Everyday Convenience", "text": "Local dining, shopping, and service options reduce the need to drive far for essentials." }
+    ],
+    "snapshot": [
+      { "label": "Typical Homes", "value": "Townhomes, detached homes, and newer luxury properties" },
+      { "label": "Price Profile", "value": "Mid-$700Ks to low-$1M range for many active buyers" },
+      { "label": "Lot Style", "value": "Planned neighborhood lots with connected paths and greenspace" },
+      { "label": "Best Fit", "value": "Families, remote workers, and buyers who want a structured community" }
+    ],
+    "commute": [
+      { "label": "Dulles Airport", "value": "15 to 20 min" },
+      { "label": "Ashburn / Loudoun jobs", "value": "10 to 15 min" },
+      { "label": "Tysons / Reston", "value": "30 to 40 min" }
+    ],
+    "schools": {
+      "district": "Loudoun County Public Schools",
+      "text": "Brambleton is especially attractive to buyers who want a school-centered community with easy access to parks, sidewalks, and organized activities.",
+      "notes": [
+        "Popular with buyers moving up from townhomes or older suburbs",
+        "Strong fit for households that value predictability and convenience",
+        "Great match for those who want a vibrant, planned environment"
+      ]
+    },
+    "cta": "If Brambleton is on your list, I can show you how it compares with Ashburn, Broadlands, and South Riding."
+  },
+  "broadlands": {
+    "name": "Broadlands",
+    "county": "Loudoun County",
+    "heroImage": "images/broadlands.jpg",
+    "heroTag": "Nature and Neighborhood",
+    "heroLead": "A quieter, greener Loudoun community with trails, preserved spaces, and a polished suburban feel.",
+    "overview": [
+      "Broadlands balances neighborhood convenience with a more relaxed feel. Buyers often notice the mature landscaping, community trails, and calm streets before anything else.",
+      "The area tends to attract households that want a refined Loudoun lifestyle without giving up access to modern amenities and strong commute options."
+    ],
+    "highlights": [
+      { "title": "Greener Setting", "text": "Preserves, trails, and neighborhood open space make the community feel more connected to nature." },
+      { "title": "Balanced Lifestyle", "text": "You get suburban convenience without the pace of a dense urban environment." },
+      { "title": "Long-Term Appeal", "text": "Broadlands remains a steady option for buyers planning to stay put for years." }
+    ],
+    "snapshot": [
+      { "label": "Typical Homes", "value": "Single-family homes, townhomes, and family-sized floor plans" },
+      { "label": "Price Profile", "value": "Often centered in the high-$600Ks to high-$800Ks" },
+      { "label": "Lot Style", "value": "Tree-lined streets with neighborhood paths and open space" },
+      { "label": "Best Fit", "value": "Buyers who want a quieter, polished suburb" }
+    ],
+    "commute": [
+      { "label": "Ashburn / Loudoun", "value": "10 to 15 min" },
+      { "label": "Dulles Airport", "value": "15 to 20 min" },
+      { "label": "Reston / Tysons", "value": "30 to 40 min" }
+    ],
+    "schools": {
+      "district": "Loudoun County Public Schools",
+      "text": "Broadlands works well for buyers who want the structure of a planned community and the familiarity of an established Loudoun school corridor.",
+      "notes": [
+        "Appeals to owners seeking a quieter daily rhythm",
+        "Good fit for households that prefer an organized community feel",
+        "Popular with buyers who want a mature suburban environment"
+      ]
+    },
+    "cta": "If you want a calmer alternative to Brambleton or Ashburn, Broadlands is worth a close look."
+  },
+  "one-loudoun": {
+    "name": "One Loudoun",
+    "county": "Loudoun County",
+    "heroImage": "images/oneloudoun.jpg",
+    "heroTag": "Live-Work-Play",
+    "heroLead": "A newer, lifestyle-driven destination for buyers who want dining, retail, and housing close together.",
+    "overview": [
+      "One Loudoun is a different kind of Loudoun community. The appeal is the convenience of having restaurants, retail, entertainment, and housing all tied together in one place.",
+      "It is a strong option for buyers who want a modern feel, lower-maintenance living, and the energy of a place that is active throughout the week."
+    ],
+    "highlights": [
+      { "title": "Lifestyle Convenience", "text": "Walk to dining, shopping, and everyday services without leaving the area." },
+      { "title": "Modern Housing Mix", "text": "Condos, townhomes, and newer single-family options create flexible entry points." },
+      { "title": "Newer Market Energy", "text": "The community feels current, with a built-in sense of momentum and visibility." }
+    ],
+    "snapshot": [
+      { "label": "Typical Homes", "value": "Condos, townhomes, and select single-family homes" },
+      { "label": "Price Profile", "value": "Often from the high-$500Ks into the $900Ks+" },
+      { "label": "Lot Style", "value": "Compact, low-maintenance layouts near retail and dining" },
+      { "label": "Best Fit", "value": "Buyers wanting convenience and a more urban feel" }
+    ],
+    "commute": [
+      { "label": "Dulles Airport", "value": "15 to 20 min" },
+      { "label": "Reston", "value": "20 to 30 min" },
+      { "label": "Tysons / DC", "value": "30 to 50 min" }
+    ],
+    "schools": {
+      "district": "Loudoun County Public Schools",
+      "text": "One Loudoun is often chosen by buyers who want newer housing and a more modern lifestyle while still staying within Loudoun County.",
+      "notes": [
+        "Strong fit for buyers who value convenience over yard size",
+        "Good option for professionals and downsizers",
+        "Appeals to households that want amenities on the doorstep"
+      ]
+    },
+    "cta": "If you want a one-stop community with housing and amenities together, One Loudoun deserves a tour."
+  },
+  "chantilly": {
+    "name": "Chantilly",
+    "county": "Fairfax County",
+    "heroImage": "images/listing4.jpg",
+    "heroTag": "Fairfax Value and Access",
+    "heroLead": "A practical Fairfax County option with a broad mix of homes, strong access, and solid day-to-day convenience.",
+    "overview": [
+      "Chantilly is a dependable choice for buyers who want Fairfax County location advantages without moving into the highest priced pockets of the market.",
+      "The area mixes established neighborhoods and newer inventory, giving buyers more flexibility on price point, home style, and commute planning."
+    ],
+    "highlights": [
+      { "title": "Location Flexibility", "text": "Easy access to major roads, retail corridors, and commuter routes in and around Fairfax County." },
+      { "title": "Home Variety", "text": "Buyers can choose between older, larger homes and more updated construction options." },
+      { "title": "Strong Practical Value", "text": "A reliable fit for families who want access, space, and long-term usefulness." }
+    ],
+    "snapshot": [
+      { "label": "Typical Homes", "value": "Single-family homes, townhomes, and updated neighborhood properties" },
+      { "label": "Price Profile", "value": "Often centered in the mid-$600Ks to low-$900Ks" },
+      { "label": "Lot Style", "value": "Mix of established lots and newer planned sections" },
+      { "label": "Best Fit", "value": "Families and buyers who want Fairfax access with more room to choose" }
+    ],
+    "commute": [
+      { "label": "Tysons", "value": "20 to 30 min" },
+      { "label": "Reston / Dulles", "value": "20 to 30 min" },
+      { "label": "Downtown DC", "value": "35 to 55 min" }
+    ],
+    "schools": {
+      "district": "Fairfax County Public Schools",
+      "text": "Chantilly is a strong choice for buyers who want the advantages of Fairfax County schools and a location that keeps daily routines manageable.",
+      "notes": [
+        "Useful for households balancing school needs and commuting",
+        "Commonly selected by buyers who want more home options per dollar",
+        "Good base for a long-term Fairfax County move"
+      ]
+    },
+    "cta": "If you're weighing Chantilly against Loudoun County communities, I can show you where the value tradeoffs really are."
+  },
+  "aldie": {
+    "name": "Aldie",
+    "county": "Loudoun County",
+    "heroImage": "images/aldie.jpg",
+    "heroTag": "Estate Style Living",
+    "heroLead": "A scenic Loudoun County market with larger homes, newer luxury communities, and a more open feel.",
+    "overview": [
+      "Aldie is where many buyers go when they want more space, newer construction, and a setting that feels less dense than the closer-in suburbs.",
+      "The area is known for its luxury communities, larger lots, and a lifestyle that feels more relaxed while still staying connected to Loudoun County conveniences."
+    ],
+    "highlights": [
+      { "title": "More Space", "text": "Larger homes and bigger footprints are a major draw for move-up buyers." },
+      { "title": "Scenic Setting", "text": "Rolling landscape and open-feeling neighborhoods give the area a more relaxed tone." },
+      { "title": "Luxury Appeal", "text": "Aldie often attracts households looking for newer, higher-end homes with room to grow." }
+    ],
+    "snapshot": [
+      { "label": "Typical Homes", "value": "Newer single-family homes and luxury estate-style properties" },
+      { "label": "Price Profile", "value": "Commonly in the high-$700Ks to well above $1M" },
+      { "label": "Lot Style", "value": "Larger lots and community pockets with more breathing room" },
+      { "label": "Best Fit", "value": "Buyers wanting space, privacy, and a premium Loudoun setting" }
+    ],
+    "commute": [
+      { "label": "Ashburn", "value": "15 to 25 min" },
+      { "label": "Dulles Airport", "value": "20 to 30 min" },
+      { "label": "Tysons / DC", "value": "35 to 60 min" }
+    ],
+    "schools": {
+      "district": "Loudoun County Public Schools",
+      "text": "Aldie is attractive to buyers who want access to Loudoun County schools and a neighborhood environment that feels more spacious and residential.",
+      "notes": [
+        "Popular with buyers upsizing from smaller homes nearby",
+        "A good fit for households prioritizing space and privacy",
+        "Works well for long-term owners who want a premium setting"
+      ]
+    },
+    "cta": "If you're looking for more room without leaving Loudoun County, Aldie should be on your shortlist."
+  },
+  "centreville": {
+    "name": "Centreville",
+    "county": "Fairfax County",
+    "heroImage": "images/stoneridge.jpg",
+    "heroTag": "Established Fairfax Value",
+    "heroLead": "A practical, well-located Fairfax County market that gives buyers a lot of home for the money.",
+    "overview": [
+      "Centreville is a practical pick for buyers who want access, established neighborhoods, and a broad range of price points.",
+      "It is often a strong value play for families who want Fairfax County location benefits without paying for the most premium corridors in the region."
+    ],
+    "highlights": [
+      { "title": "Value Orientation", "text": "Buyers often find more space and more home for the budget here." },
+      { "title": "Easy Access", "text": "I-66 and surrounding road networks make the area useful for commuters." },
+      { "title": "Established Feel", "text": "Mature neighborhoods and everyday convenience keep Centreville practical." }
+    ],
+    "snapshot": [
+      { "label": "Typical Homes", "value": "Older single-family homes, townhomes, and updated subdivisions" },
+      { "label": "Price Profile", "value": "Frequently in the high-$500Ks to mid-$700Ks" },
+      { "label": "Lot Style", "value": "Established neighborhoods with mature landscaping" },
+      { "label": "Best Fit", "value": "Buyers focused on value, access, and everyday convenience" }
+    ],
+    "commute": [
+      { "label": "Fairfax / Vienna", "value": "20 to 30 min" },
+      { "label": "Tysons", "value": "25 to 35 min" },
+      { "label": "Downtown DC", "value": "35 to 60 min" }
+    ],
+    "schools": {
+      "district": "Fairfax County Public Schools",
+      "text": "Centreville works well for buyers who want Fairfax County schools and a location that keeps commuting manageable.",
+      "notes": [
+        "Frequently considered by buyers looking for stronger value per square foot",
+        "Good for families that want established neighborhoods",
+        "Useful as a first step into Fairfax County ownership"
+      ]
+    },
+    "cta": "If you want to compare Centreville's value against nearby Fairfax and Loudoun options, I can help."
+  },
+  "leesburg": {
+    "name": "Leesburg",
+    "county": "Loudoun County",
+    "heroImage": "images/lansdowne.jpg",
+    "heroTag": "Historic Charm Meets Growth",
+    "heroLead": "A market with a real town center feel, strong local character, and housing that ranges from historic to upscale planned communities.",
+    "overview": [
+      "Leesburg blends historic character and modern growth better than almost anywhere else in Loudoun County.",
+      "Buyers who like the downtown feel, access to restaurants and local events, and a mix of established and newer housing often find Leesburg especially appealing."
+    ],
+    "highlights": [
+      { "title": "Town Center Energy", "text": "Historic downtown, restaurants, and community events create a strong sense of place." },
+      { "title": "Lifestyle Variety", "text": "From planned communities to more traditional neighborhoods, the housing mix is broad." },
+      { "title": "Weekend Appeal", "text": "Wineries, trail access, and local gathering spots make the area feel complete." }
+    ],
+    "snapshot": [
+      { "label": "Typical Homes", "value": "Historic properties, single-family homes, and upscale community builds" },
+      { "label": "Price Profile", "value": "Often spans the low-$700Ks to well above $1M" },
+      { "label": "Lot Style", "value": "A mix of older town lots and newer planned communities" },
+      { "label": "Best Fit", "value": "Buyers who want character, amenities, and a stronger town feel" }
+    ],
+    "commute": [
+      { "label": "Ashburn", "value": "15 to 25 min" },
+      { "label": "Dulles Airport", "value": "25 to 35 min" },
+      { "label": "Tysons / DC", "value": "35 to 60 min" }
+    ],
+    "schools": {
+      "district": "Loudoun County Public Schools",
+      "text": "Leesburg is a good fit for families who want Loudoun County schools plus the added lifestyle benefit of a true town center.",
+      "notes": [
+        "Popular with buyers who like an active local calendar",
+        "Good balance of old-town character and newer community amenities",
+        "Works for households that want more than a purely suburban feel"
+      ]
+    },
+    "cta": "If you want a home base with more character and local energy, Leesburg is worth serious consideration."
+  },
+  "south-riding": {
+    "name": "South Riding",
+    "county": "Loudoun County",
+    "heroImage": "images/southriding.jpg",
+    "heroTag": "Amenity-Rich Suburban Living",
+    "heroLead": "A highly livable Loudoun community with trails, pools, recreation, and a strong family-friendly feel.",
+    "overview": [
+      "South Riding is a classic master-planned community with the kind of everyday convenience many buyers want but do not always find.",
+      "The neighborhood's amenities, neighborhood planning, and family-oriented feel make it a steady option for buyers who want a dependable Loudoun County base."
+    ],
+    "highlights": [
+      { "title": "Amenity Depth", "text": "Pools, trails, recreation spaces, and community amenities support an active lifestyle." },
+      { "title": "Family Friendly", "text": "The layout and community feel work especially well for households with kids." },
+      { "title": "Practical Convenience", "text": "Shopping, services, and commuter routes are close enough for daily life to stay simple." }
+    ],
+    "snapshot": [
+      { "label": "Typical Homes", "value": "Single-family homes and townhomes in a planned suburban setting" },
+      { "label": "Price Profile", "value": "Frequently in the mid-$600Ks to low-$800Ks" },
+      { "label": "Lot Style", "value": "Community lots with neighborhood trails and amenities" },
+      { "label": "Best Fit", "value": "Families and buyers who want a full-service suburban environment" }
+    ],
+    "commute": [
+      { "label": "Ashburn", "value": "15 to 20 min" },
+      { "label": "Dulles Airport", "value": "20 to 25 min" },
+      { "label": "Tysons / DC", "value": "35 to 60 min" }
+    ],
+    "schools": {
+      "district": "Loudoun County Public Schools",
+      "text": "South Riding is often selected by buyers who want a complete community package with school access and family-oriented infrastructure.",
+      "notes": [
+        "Useful for buyers who value a community-centered lifestyle",
+        "Popular with households that want amenities close to home",
+        "A stable option for long-term Loudoun County living"
+      ]
+    },
+    "cta": "If South Riding's community feel matches your priorities, I can help you compare it against nearby Loudoun neighborhoods."
+  }
+}

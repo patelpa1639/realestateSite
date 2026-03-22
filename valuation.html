@@ -60,39 +60,52 @@
         <div class="valuation-form-card">
           <h3>Get Your Free Valuation</h3>
           <p>Enter your details and I'll provide a personalized market analysis of your home.</p>
-          <form>
+          <form data-lead-form="valuation">
             <div class="form-group">
-              <label>Property Address</label>
-              <input type="text" placeholder="123 Main St, Chantilly, VA" required>
+              <label for="valuation-property-address">Property Address</label>
+              <input id="valuation-property-address" name="propertyAddress" type="text" placeholder="123 Main St, Chantilly, VA" required>
             </div>
             <div class="form-row">
               <div class="form-group">
-                <label>Full Name</label>
-                <input type="text" required>
+                <label for="valuation-name">Full Name</label>
+                <input id="valuation-name" name="name" type="text" required>
               </div>
               <div class="form-group">
-                <label>Phone</label>
-                <input type="tel" required>
+                <label for="valuation-phone">Phone</label>
+                <input id="valuation-phone" name="phone" type="tel" required>
               </div>
             </div>
             <div class="form-group">
-              <label>Email</label>
-              <input type="email" required>
+              <label for="valuation-email">Email</label>
+              <input id="valuation-email" name="email" type="email" required>
             </div>
             <div class="form-group">
-              <label>Timeline</label>
-              <select>
-                <option>Just curious</option>
-                <option>Thinking about selling in 6+ months</option>
-                <option>Planning to sell in 3-6 months</option>
-                <option>Ready to sell now</option>
+              <label for="valuation-timeline">Timeline</label>
+              <select id="valuation-timeline" name="timeline">
+                <option value="Just curious">Just curious</option>
+                <option value="Thinking about selling in 6+ months">Thinking about selling in 6+ months</option>
+                <option value="Planning to sell in 3-6 months">Planning to sell in 3-6 months</option>
+                <option value="Ready to sell now">Ready to sell now</option>
               </select>
             </div>
             <div class="form-group">
-              <label>Anything else I should know?</label>
-              <textarea placeholder="Recent renovations, unique features, preferred timing..." style="min-height: 100px;"></textarea>
+              <label for="valuation-contact-method">Preferred Contact</label>
+              <select id="valuation-contact-method" name="preferredContactMethod">
+                <option value="Call">Call</option>
+                <option value="Text">Text</option>
+                <option value="Email">Email</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="valuation-message">Anything else I should know?</label>
+              <textarea id="valuation-message" name="message" placeholder="Recent renovations, unique features, preferred timing..." style="min-height: 100px;"></textarea>
+            </div>
+            <div class="form-group form-honeypot" aria-hidden="true">
+              <label for="valuation-company">Company</label>
+              <input id="valuation-company" name="company" type="text" tabindex="-1" autocomplete="off">
             </div>
             <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center;">Get My Free Valuation</button>
+            <p class="form-status" aria-live="polite"></p>
             <p style="font-size: 0.75rem; color: var(--text-muted); margin-top: 1rem; text-align: center;">No spam. No obligation. Just honest market insight.</p>
           </form>
         </div>
@@ -237,6 +250,7 @@
     </div>
   </footer>
 
+  <script src="js/site-data.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>
