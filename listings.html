@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Listings | Neena K Homes - Northern Virginia Real Estate</title>
+  <meta name="description" content="Browse luxury homes for sale in Northern Virginia. Fairfax, Loudoun & Prince William County listings curated by Neena Kalra.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav scrolled">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-brand">
+        <img src="images/logo.png" alt="NK Homes Logo" class="nav-brand-logo">
+        <span class="nav-brand-name">Neena K Homes</span>
+        <span class="nav-brand-tagline">Luxury Real Estate</span>
+      </a>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="listings.html" class="active">Listings</a>
+        <a href="neighborhoods.html">Neighborhoods</a>
+        <a href="about.html">About</a>
+        <a href="valuation.html">Home Value</a>
+        <a href="contact.html" class="nav-cta">Contact</a>
+      </div>
+      <div class="nav-toggle">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <div class="page-header">
+    <div class="page-header-bg" style="background-image: url('https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1920&q=80')"></div>
+    <div class="page-header-content">
+      <span class="section-label">Browse Properties</span>
+      <h1>Our Listings</h1>
+      <p>Curated homes across Northern Virginia — from starter homes to luxury estates</p>
+    </div>
+  </div>
+
+  <!-- Breadcrumbs -->
+  <div class="container">
+    <div class="breadcrumbs">
+      <a href="index.html">Home</a> <span>/</span> Listings
+    </div>
+  </div>
+
+  <!-- Search & Filter -->
+  <section class="section-pad-sm">
+    <div class="container">
+      <div class="search-bar-inner" style="box-shadow: var(--shadow-sm); margin-bottom: 2rem;">
+        <div class="search-group">
+          <label>Location</label>
+          <input type="text" placeholder="City, ZIP, or Neighborhood">
+        </div>
+        <div class="search-group">
+          <label>Property Type</label>
+          <select>
+            <option value="">All Types</option>
+            <option>Single Family</option>
+            <option>Townhouse</option>
+            <option>Condo</option>
+            <option>Luxury Estate</option>
+          </select>
+        </div>
+        <div class="search-group">
+          <label>Price Range</label>
+          <select>
+            <option value="">Any Price</option>
+            <option>$300K - $500K</option>
+            <option>$500K - $750K</option>
+            <option>$750K - $1M</option>
+            <option>$1M - $2M</option>
+            <option>$2M+</option>
+          </select>
+        </div>
+        <button class="btn btn-primary">Search</button>
+      </div>
+
+      <div class="listings-filter-bar">
+        <button class="filter-btn active" data-filter="all">All Listings</button>
+        <button class="filter-btn" data-filter="featured">Featured</button>
+        <button class="filter-btn" data-filter="new">New on Market</button>
+        <button class="filter-btn" data-filter="luxury">Luxury</button>
+        <button class="filter-btn" data-filter="sold">Recently Sold</button>
+      </div>
+
+      <div class="listings-grid">
+
+        <a href="https://neenakalra.realscout.me/" target="_blank" rel="noopener" class="listing-card fade-up" data-type="featured">
+          <div class="listing-card-image">
+            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80" alt="Luxury home in Ashburn">
+            <span class="listing-badge">Featured</span>
+            <button class="listing-favorite" aria-label="Save">&#9825;</button>
+          </div>
+          <div class="listing-card-body">
+            <div class="listing-price">$1,250,000</div>
+            <div class="listing-address">12847 Chandler Ridge Ln, Ashburn, VA 20147</div>
+            <div class="listing-features">
+              <span class="listing-feature">5 Beds</span>
+              <span class="listing-feature">4.5 Baths</span>
+              <span class="listing-feature">5,200 Sqft</span>
+            </div>
+          </div>
+        </a>
+
+        <a href="https://neenakalra.realscout.me/" target="_blank" rel="noopener" class="listing-card fade-up" data-type="new">
+          <div class="listing-card-image">
+            <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&q=80" alt="Colonial in Chantilly">
+            <span class="listing-badge" style="background: var(--navy)">New</span>
+            <button class="listing-favorite" aria-label="Save">&#9825;</button>
+          </div>
+          <div class="listing-card-body">
+            <div class="listing-price">$875,000</div>
+            <div class="listing-address">4523 Stonecroft Blvd, 14291 Park Meadow Dr Ste, Chantilly, VA 20151</div>
+            <div class="listing-features">
+              <span class="listing-feature">4 Beds</span>
+              <span class="listing-feature">3.5 Baths</span>
+              <span class="listing-feature">3,800 Sqft</span>
+            </div>
+          </div>
+        </a>
+
+        <a href="https://neenakalra.realscout.me/" target="_blank" rel="noopener" class="listing-card fade-up" data-type="luxury">
+          <div class="listing-card-image">
+            <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=800&q=80" alt="Estate in Aldie">
+            <span class="listing-badge">Luxury</span>
+            <button class="listing-favorite" aria-label="Save">&#9825;</button>
+          </div>
+          <div class="listing-card-body">
+            <div class="listing-price">$2,150,000</div>
+            <div class="listing-address">22910 Foxcroft Rd, Aldie, VA 20105</div>
+            <div class="listing-features">
+              <span class="listing-feature">6 Beds</span>
+              <span class="listing-feature">5.5 Baths</span>
+              <span class="listing-feature">7,500 Sqft</span>
+            </div>
+          </div>
+        </a>
+
+        <a href="https://neenakalra.realscout.me/" target="_blank" rel="noopener" class="listing-card fade-up" data-type="new">
+          <div class="listing-card-image">
+            <img src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=800&q=80" alt="Townhome in Centreville">
+            <span class="listing-badge" style="background: var(--navy)">New</span>
+            <button class="listing-favorite" aria-label="Save">&#9825;</button>
+          </div>
+          <div class="listing-card-body">
+            <div class="listing-price">$625,000</div>
+            <div class="listing-address">6102 Fairview Farm Dr, Centreville, VA 20120</div>
+            <div class="listing-features">
+              <span class="listing-feature">3 Beds</span>
+              <span class="listing-feature">2.5 Baths</span>
+              <span class="listing-feature">2,400 Sqft</span>
+            </div>
+          </div>
+        </a>
+
+        <a href="https://neenakalra.realscout.me/" target="_blank" rel="noopener" class="listing-card fade-up" data-type="featured">
+          <div class="listing-card-image">
+            <img src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=800&q=80" alt="Modern home in Leesburg">
+            <span class="listing-badge">Featured</span>
+            <button class="listing-favorite" aria-label="Save">&#9825;</button>
+          </div>
+          <div class="listing-card-body">
+            <div class="listing-price">$985,000</div>
+            <div class="listing-address">18234 Maple Ridge Ct, Leesburg, VA 20176</div>
+            <div class="listing-features">
+              <span class="listing-feature">5 Beds</span>
+              <span class="listing-feature">4 Baths</span>
+              <span class="listing-feature">4,600 Sqft</span>
+            </div>
+          </div>
+        </a>
+
+        <a href="https://neenakalra.realscout.me/" target="_blank" rel="noopener" class="listing-card fade-up" data-type="luxury">
+          <div class="listing-card-image">
+            <img src="https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?w=800&q=80" alt="Luxury estate in South Riding">
+            <span class="listing-badge">Luxury</span>
+            <button class="listing-favorite" aria-label="Save">&#9825;</button>
+          </div>
+          <div class="listing-card-body">
+            <div class="listing-price">$1,750,000</div>
+            <div class="listing-address">25480 Elk Creek Ct, South Riding, VA 20152</div>
+            <div class="listing-features">
+              <span class="listing-feature">6 Beds</span>
+              <span class="listing-feature">5 Baths</span>
+              <span class="listing-feature">6,800 Sqft</span>
+            </div>
+          </div>
+        </a>
+
+        <a href="https://neenakalra.realscout.me/" target="_blank" rel="noopener" class="listing-card fade-up" data-type="sold">
+          <div class="listing-card-image">
+            <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800&q=80" alt="Sold home in Ashburn">
+            <span class="listing-badge" style="background: #2c3e50">Sold</span>
+            <button class="listing-favorite" aria-label="Save">&#9825;</button>
+          </div>
+          <div class="listing-card-body">
+            <div class="listing-price">$920,000</div>
+            <div class="listing-address">43215 Heritage Oak Ter, Ashburn, VA 20147</div>
+            <div class="listing-features">
+              <span class="listing-feature">4 Beds</span>
+              <span class="listing-feature">3.5 Baths</span>
+              <span class="listing-feature">3,950 Sqft</span>
+            </div>
+          </div>
+        </a>
+
+        <a href="https://neenakalra.realscout.me/" target="_blank" rel="noopener" class="listing-card fade-up" data-type="sold">
+          <div class="listing-card-image">
+            <img src="https://images.unsplash.com/photo-1605276374104-dee2a0ed3cd6?w=800&q=80" alt="Sold home in Chantilly">
+            <span class="listing-badge" style="background: #2c3e50">Sold</span>
+            <button class="listing-favorite" aria-label="Save">&#9825;</button>
+          </div>
+          <div class="listing-card-body">
+            <div class="listing-price">$715,000</div>
+            <div class="listing-address">3891 Wetland Ct, 14291 Park Meadow Dr Ste, Chantilly, VA 20151</div>
+            <div class="listing-features">
+              <span class="listing-feature">4 Beds</span>
+              <span class="listing-feature">3 Baths</span>
+              <span class="listing-feature">3,200 Sqft</span>
+            </div>
+          </div>
+        </a>
+
+        <a href="https://neenakalra.realscout.me/" target="_blank" rel="noopener" class="listing-card fade-up" data-type="new">
+          <div class="listing-card-image">
+            <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&q=80" alt="Home in Fairfax">
+            <span class="listing-badge" style="background: var(--navy)">New</span>
+            <button class="listing-favorite" aria-label="Save">&#9825;</button>
+          </div>
+          <div class="listing-card-body">
+            <div class="listing-price">$549,000</div>
+            <div class="listing-address">10742 West Dr, Fairfax, VA 22030</div>
+            <div class="listing-features">
+              <span class="listing-feature">3 Beds</span>
+              <span class="listing-feature">2.5 Baths</span>
+              <span class="listing-feature">2,100 Sqft</span>
+            </div>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-banner">
+    <div class="cta-banner-bg"></div>
+    <div class="container">
+      <div class="cta-content">
+        <span class="section-label">Can't Find What You're Looking For?</span>
+        <h2>Let Me Find Your Perfect Home</h2>
+        <p>I have access to off-market listings and upcoming properties before they hit the MLS. Tell me what you're looking for and I'll do the rest.</p>
+        <div class="cta-actions">
+          <a href="contact.html" class="btn btn-primary">Get in Touch</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="images/logo.png" alt="NK Homes" style="height: 50px; width: auto; margin-bottom: 1rem;">
+          <h3>Neena K Homes</h3>
+          <div class="footer-brand-tagline">Luxury Real Estate</div>
+          <p>Elevating your real estate experience across Northern Virginia.</p>
+          <div class="footer-social">
+            <a href="https://www.instagram.com/neenakhomes/" target="_blank" rel="noopener">IG</a>
+            <a href="https://www.facebook.com/Neenakalrarealestate/" target="_blank" rel="noopener">FB</a>
+            <a href="https://maps.app.goo.gl/tbmdqJbPWCHqteJr9" target="_blank" rel="noopener">G</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <a href="listings.html">All Listings</a>
+          <a href="valuation.html">Home Valuation</a>
+          <a href="neighborhoods.html">Neighborhoods</a>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <a href="about.html">About Neena</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="footer-col">
+          <h4>Get in Touch</h4>
+          <div class="footer-contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+            <span><a href="tel:5712772336" style="color: var(--gold)">(571) 277-2336</a></span>
+          </div>
+          <div class="footer-contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <span><a href="mailto:realtor.neena.kalra@gmail.com" style="color: var(--gold)">realtor.neena.kalra@gmail.com</a></span>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Neena K Homes | Samson Properties | License #0225221074</p>
+        <div class="footer-legal">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms</a>
+          <a href="#">Fair Housing</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
