@@ -1,29 +1,43 @@
 # Deploy
 
-## Recommended Host
+## Recommended Setup
 
-Use Render for this app. It runs the Node server directly and supports a custom domain later.
+This site can now be hosted as a static site.
 
-## Why
+The pages are plain HTML, CSS, and JS, and forms submit directly to Neena's email through FormSubmit:
 
-- This site is not static-only. It needs the Node server in `server.js`.
-- Lead submissions write to `data/leads.ndjson`, so production needs persistent storage.
+- `https://formsubmit.co/ajax/realtor.neena.kalra@gmail.com`
 
-## Render Steps
+## Free Hosting Options
 
-1. Push this repo to GitHub.
-2. In Render, create a new Blueprint and point it at this repo.
-3. Render will read `render.yaml`.
-4. Deploy the web service.
-5. After deploy, open the Render URL and verify:
-   - `/`
-   - `/listings.html`
-   - `/health`
-   - a test form submission
-6. Add your custom domain later from the Render dashboard.
+- GitHub Pages
+- Cloudflare Pages
+- Netlify static hosting
 
-## Notes
+## Simplest Path: GitHub Pages
 
-- `LEADS_FILE` is configured to `/var/data/leads.ndjson` in `render.yaml`.
-- The Render disk mount keeps leads across restarts and deploys.
-- If you want email/CRM delivery instead of file storage later, that can be added separately.
+1. Push the repo to GitHub.
+2. In the repo, open `Settings`.
+3. Open `Pages`.
+4. Set:
+   - Source: `Deploy from a branch`
+   - Branch: `main`
+   - Folder: `/ (root)`
+5. Save.
+6. Wait for GitHub to publish the site.
+
+## Forms
+
+The first time a form is submitted through FormSubmit, the inbox owner may need to confirm activation from a verification email.
+
+After that, submissions go to:
+
+- `realtor.neena.kalra@gmail.com`
+
+## Custom Domain Later
+
+You can add the real domain later from your static host settings:
+
+- GitHub Pages custom domain
+- Cloudflare Pages custom domain
+- Netlify custom domain

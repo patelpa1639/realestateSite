@@ -6,6 +6,7 @@ const { URL } = require('node:url');
 const ROOT_DIR = __dirname;
 const DEFAULT_PORT = Number(process.env.PORT || 3000);
 const LEADS_FILE = process.env.LEADS_FILE || path.join(ROOT_DIR, 'data', 'leads.ndjson');
+const LEAD_WEBHOOK_URL = process.env.LEAD_WEBHOOK_URL || '';
 
 const MIME_TYPES = new Map([
   ['.css', 'text/css; charset=utf-8'],
@@ -71,6 +72,31 @@ async function ensureParentDir(filePath) {
 async function appendLead(lead) {
   await ensureParentDir(LEADS_FILE);
   await fs.appendFile(LEADS_FILE, `${JSON.stringify(lead)}\n`, 'utf8');
+}
+
+async function forwardLead(lead) {
+  const response = await fetch(LEAD_WEBHOOK_URL, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify(lead)
+  });
+
+  if (!response.ok) {
+    const error = new Error(`Lead webhook failed with status ${response.status}.`);
+    error.statusCode = 502;
+    throw error;
+  }
+}
+
+async function deliverLead(lead) {
+  if (LEAD_WEBHOOK_URL) {
+    await forwardLead(lead);
+    return;
+  }
+
+  await appendLead(lead);
 }
 
 function normalizeLead(body, request) {
@@ -162,7 +188,7 @@ async function handleLeadSubmission(request, response) {
       return;
     }
 
-    await appendLead(normalized.lead);
+    await deliverLead(normalized.lead);
     sendJson(response, 201, { ok: true, message: 'Lead saved.' });
   } catch (error) {
     const statusCode = error.statusCode || 500;

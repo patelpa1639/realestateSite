@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const data = window.NK_DATA || { listings: [], neighborhoods: [], office: {} };
   const listings = Array.isArray(data.listings) ? data.listings : [];
   const neighborhoods = Array.isArray(data.neighborhoods) ? data.neighborhoods : [];
+  const formEndpoint = window.NK_FORM_ENDPOINT || 'https://formsubmit.co/ajax/realtor.neena.kalra@gmail.com';
   const favoriteStorageKey = 'nk-favorite-listings';
   const favoriteSet = new Set(readFavorites());
 
@@ -640,9 +641,12 @@ document.addEventListener('DOMContentLoaded', () => {
         if (status) status.textContent = 'Sending your details...';
 
         try {
-          const response = await fetch('/api/leads', {
+          const response = await fetch(formEndpoint, {
             method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
+            headers: {
+              'Content-Type': 'application/json',
+              Accept: 'application/json'
+            },
             body: JSON.stringify(payload)
           });
 
@@ -695,6 +699,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     payload.pagePath = `${window.location.pathname}${window.location.search}`;
     payload.source = 'website';
+    payload._subject = `New website lead: ${payload.inquiryType}`;
+    payload._template = 'table';
+    payload._captcha = 'false';
 
     if (form.dataset.propertyAddress) {
       payload.propertyAddress = form.dataset.propertyAddress;

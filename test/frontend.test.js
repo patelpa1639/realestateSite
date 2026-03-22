@@ -128,13 +128,14 @@ test('contact form posts a real lead payload to the API endpoint', async (t) => 
   await window.happyDOM.whenAsyncComplete();
 
   assert.ok(requestPayload);
-  assert.equal(requestPayload.url, '/api/leads');
+  assert.equal(requestPayload.url, 'https://formsubmit.co/ajax/realtor.neena.kalra@gmail.com');
 
   const body = JSON.parse(requestPayload.options.body);
   assert.equal(body.firstName, 'Jordan');
   assert.equal(body.lastName, 'Lee');
   assert.equal(body.email, 'jordan@example.com');
   assert.equal(body.inquiryType, 'Buying a Home');
+  assert.equal(body._template, 'table');
   assert.match(body.pagePath, /contact\.html/);
   assert.match(window.document.querySelector('.form-status').textContent, /sent successfully/i);
 });
