@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://patelpa1639.github.io/realestateSite/sitemap.xml
