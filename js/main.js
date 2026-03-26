@@ -316,7 +316,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const params = new URLSearchParams(window.location.search);
     const queryFilter = params.get('filter');
     const hashFilter = window.location.hash.replace('#', '');
-    const allowedFilters = new Set(['all', 'featured', 'new', 'luxury', 'sold', 'loudoun', 'fairfax']);
+    const allowedFilters = new Set(['all', 'featured', 'new', 'premium', 'sold', 'loudoun', 'fairfax']);
 
     if (queryFilter && allowedFilters.has(queryFilter)) return queryFilter;
     if (hashFilter && allowedFilters.has(hashFilter)) return hashFilter;
@@ -819,7 +819,7 @@ document.addEventListener('DOMContentLoaded', () => {
       sold: 'recent closings',
       loudoun: 'Loudoun County',
       fairfax: 'Fairfax County',
-      luxury: 'luxury sales',
+      premium: 'premium sales',
       featured: 'featured transactions',
       new: 'recent additions'
     };
