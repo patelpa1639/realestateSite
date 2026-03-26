@@ -7,6 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const listings = Array.isArray(data.listings) ? data.listings : [];
   const neighborhoods = Array.isArray(data.neighborhoods) ? data.neighborhoods : [];
   const formEndpoint = window.NK_FORM_ENDPOINT || 'https://formsubmit.co/ajax/realtor.neena.kalra@gmail.com';
+  const crmEndpoint = 'https://nkhomes-arm-intelligence.vercel.app/api/submissions';
   const favoriteStorageKey = 'nk-favorite-listings';
   const favoriteSet = new Set(readFavorites());
 
@@ -653,6 +654,22 @@ document.addEventListener('DOMContentLoaded', () => {
           const json = await response.json();
           if (!response.ok || !json.ok) {
             throw new Error(json.error || 'Lead submission failed.');
+          }
+
+          // Also send valuation requests to the NKHomes CRM
+          if (form.dataset.leadForm === 'valuation') {
+            try {
+              await fetch(crmEndpoint, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                  name: payload.name || '',
+                  email: payload.email || '',
+                  phone: payload.phone || '',
+                  address: payload.propertyAddress || '',
+                }),
+              });
+            } catch (_) { /* CRM sync is best-effort */ }
           }
 
           form.reset();
