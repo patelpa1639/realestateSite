@@ -8,6 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const neighborhoods = Array.isArray(data.neighborhoods) ? data.neighborhoods : [];
   const formEndpoint = window.NK_FORM_ENDPOINT || 'https://formsubmit.co/ajax/realtor.neena.kalra@gmail.com';
   const crmEndpoint = 'https://nkhomes-arm-intelligence.vercel.app/api/submissions';
+  const loftyCrmEndpoint = 'LOFTY_API_URL_HERE'; // TODO: replace with Lofty CRM endpoint
   const favoriteStorageKey = 'nk-favorite-listings';
   const favoriteSet = new Set(readFavorites());
 
@@ -642,20 +643,32 @@ document.addEventListener('DOMContentLoaded', () => {
         if (status) status.textContent = 'Sending your details...';
 
         try {
-          // Send to NKHomes CRM (primary)
-          const crmBody = {
-            name: payload.name || '',
-            email: payload.email || '',
-            phone: payload.phone || '',
-            address: payload.propertyAddress || '',
-          };
-          const crmResponse = await fetch(crmEndpoint, {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify(crmBody),
-          });
-          if (!crmResponse.ok) {
-            throw new Error('Submission failed. Please try again.');
+          if (form.dataset.leadForm === 'contact') {
+            // Contact form → Lofty CRM
+            const loftyResponse = await fetch(loftyCrmEndpoint, {
+              method: 'POST',
+              headers: { 'Content-Type': 'application/json' },
+              body: JSON.stringify(payload),
+            });
+            if (!loftyResponse.ok) {
+              throw new Error('Submission failed. Please try again.');
+            }
+          } else {
+            // All other forms → NKHomes CRM
+            const crmBody = {
+              name: payload.name || '',
+              email: payload.email || '',
+              phone: payload.phone || '',
+              address: payload.propertyAddress || '',
+            };
+            const crmResponse = await fetch(crmEndpoint, {
+              method: 'POST',
+              headers: { 'Content-Type': 'application/json' },
+              body: JSON.stringify(crmBody),
+            });
+            if (!crmResponse.ok) {
+              throw new Error('Submission failed. Please try again.');
+            }
           }
 
           // Also try FormSubmit for email notification (best-effort)
