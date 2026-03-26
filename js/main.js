@@ -642,38 +642,36 @@ document.addEventListener('DOMContentLoaded', () => {
         if (status) status.textContent = 'Sending your details...';
 
         try {
-          const response = await fetch(formEndpoint, {
+          // Send to NKHomes CRM (primary)
+          const crmBody = {
+            name: payload.name || '',
+            email: payload.email || '',
+            phone: payload.phone || '',
+            address: payload.propertyAddress || '',
+          };
+          const crmResponse = await fetch(crmEndpoint, {
             method: 'POST',
-            headers: {
-              'Content-Type': 'application/json',
-              Accept: 'application/json'
-            },
-            body: JSON.stringify(payload)
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(crmBody),
           });
-
-          const json = await response.json();
-          if (!response.ok || !json.ok) {
-            throw new Error(json.error || 'Lead submission failed.');
+          if (!crmResponse.ok) {
+            throw new Error('Submission failed. Please try again.');
           }
 
-          // Also send valuation requests to the NKHomes CRM
-          if (form.dataset.leadForm === 'valuation') {
-            try {
-              await fetch(crmEndpoint, {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({
-                  name: payload.name || '',
-                  email: payload.email || '',
-                  phone: payload.phone || '',
-                  address: payload.propertyAddress || '',
-                }),
-              });
-            } catch (_) { /* CRM sync is best-effort */ }
-          }
+          // Also try FormSubmit for email notification (best-effort)
+          try {
+            await fetch(formEndpoint, {
+              method: 'POST',
+              headers: {
+                'Content-Type': 'application/json',
+                Accept: 'application/json'
+              },
+              body: JSON.stringify(payload)
+            });
+          } catch (_) { /* email notification is best-effort */ }
 
           form.reset();
-          if (status) status.textContent = 'Thanks. Your request was sent successfully.';
+          if (status) status.textContent = 'Thanks! Neena will be in touch shortly.';
 
           if (form.dataset.leadForm === 'showing-request' && form.dataset.defaultMessage) {
             const messageField = form.querySelector('[name="message"]');
